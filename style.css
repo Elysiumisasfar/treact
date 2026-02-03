@@ -122,10 +122,6 @@ nav {
 .nav__row {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 24px;
    
 }
 
@@ -389,6 +385,13 @@ header .row {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.6;
+    
+}
+
+.header__customers { 
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
     
 }
 
@@ -1301,9 +1304,35 @@ MOBILE RESPONSIVENESS ↓
         width: 5rem;
         bottom: -50px;
     }
+
+    .header__img {
+        max-width: 512px;
+        margin: 30px 0;
+    }
+
+    .header__img--wrapper {
+        display: flex;
+        justify-content: flex-end; 
+    }
+    .header__customers {
+        padding-right: 64px;
+    }
 }
 
 @media (max-width: 1024px) {
+
+    .header__customers--title, .header__img--wrapper {
+        margin-top: 8px;
+    }
+
+    .header__description, .header__img--wrapper {
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+    }
+    .header__customers { 
+        padding-right: 0px;
+    }
 
     .btn__menu {
     display: block;
@@ -1333,6 +1362,7 @@ MOBILE RESPONSIVENESS ↓
         width: 70%;
         height: 50;
         text-align: center;
+        margin: 20px;
 
     }
 
@@ -1567,9 +1597,13 @@ MOBILE RESPONSIVENESS ↓
         flex-direction: column;
         margin-top: 100px;
     }
-    .header__description--para {
-        height: 20px;
+    
+
+    .header__customers--title {
+        font-size: 14px;
+        letter-spacing: 0.05em;
     }
+    
    
     .feature__para {
         margin-top: 4px;
@@ -1624,6 +1658,27 @@ MOBILE RESPONSIVENESS ↓
     }
 
     /* Values */ 
+    /*testimonials */
+    .testimonial__bottom { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial__buttons { 
+        margin-top: 30px;
+    }
+
+    .testimonial__profile { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial__details {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+
 
     /* Pricing */ 
     #pricing .section__title { 
@@ -1633,6 +1688,19 @@ MOBILE RESPONSIVENESS ↓
     main {
         margin-bottom: 80px;
     }
+    /* start */ 
+    .start__button:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .start__button:nth-child(2) {
+        margin-top: 16px;
+    }
+    .start__buttons  {
+        display: flex;
+        flex-direction: column;
+    }
+    
 
     /* footer */ 
     .footer__columns {
